@@ -9,3 +9,14 @@ import plotly_express as px
 def index():
     return render_template('index.html', title = 'Home')
 
+@app.route('/build-a-model')
+def model1():
+    return render_template('model.html', title = 'Build-A-Model')
+
+@app.route('/spam-vs-ham')
+def model2():
+    return render_template('model.html', title = 'Spam vs. Ham')
+
+@app.route('/natural-disaster-classifier')
+def model3():
+    return render_template('model.html', title = 'Natural Disaster Classifier')

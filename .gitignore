@@ -1,2 +1,5 @@
 # Don't include venv
 /venv
+
+# pycache files
+/app/__pycache__
