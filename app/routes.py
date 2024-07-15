@@ -11,12 +11,12 @@ def index():
 
 @app.route('/build-a-model')
 def model1():
-    return render_template('model.html', title = 'Build-A-Model')
+    return render_template('model1.html', title = 'Build-A-Model')
 
 @app.route('/spam-vs-ham')
 def model2():
-    return render_template('model.html', title = 'Spam vs. Ham')
+    return render_template('model2.html', title = 'Spam vs. Ham')
 
 @app.route('/natural-disaster-classifier')
 def model3():
-    return render_template('model.html', title = 'Natural Disaster Classifier')
+    return render_template('model3.html', title = 'Natural Disaster Classifier')
