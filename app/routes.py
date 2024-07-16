@@ -11,7 +11,9 @@ def index():
 
 @app.route('/build-a-model')
 def model1():
-    return render_template('model1.html', title = 'Build-A-Model')
+    train = pd.read_csv('./app/data/processed_data/ccao_train_cleaned.csv').drop('Unnamed: 0', axis=1)
+    data_preview = train.head().to_html(classes='table table-striped table-bordered', index=False)
+    return render_template('model1.html', title = 'Build-A-Model', data = data_preview)
 
 @app.route('/spam-vs-ham')
 def model2():
